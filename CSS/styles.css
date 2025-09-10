@@ -1,0 +1,44 @@
+
+#header {
+background-color: aliceblue;
+padding: 20px;
+text-align: center;
+
+& h2 {
+    color: red;
+}
+
+& p {
+    color: violet;
+}
+& p:hover {
+    color: pink;
+    font-size: 18px;
+    cursor: crosshair;
+}
+
+h1 {
+    color: green !important;
+}
+
+.esta-es-una-clase {
+    color: blue;
+}
+
+.esta-es-una-clase:hover {
+    color: purple;
+    font-size: 20px;
+}
+
+h2 {
+    color: orange;
+}
+
+img {
+    width: 50%;
+}
+
+body{
+    height: 100%;
+}
+}
