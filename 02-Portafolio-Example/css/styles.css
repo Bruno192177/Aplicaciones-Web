@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    & nav {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        background-color: var(--primary-color);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 0 20px;
+    }
+
+    & span:nth-child(1) {
+        font-size: 20px;
+        color: var(--secondary-color)
+    }
+
+    & span:nth-child(2) {
+        text-decoration: underline;
+    }
+}
