@@ -8,7 +8,11 @@
     padding: 0;
 }
 
-header {
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,18 +22,62 @@ header {
         display: flex;
         flex-direction: row;
         height: 60px;
-        background-color: var(--primary-color);
         justify-content: space-between;
         align-items: center;
         padding: 0 20px 0 20px;
+
+        & h2 {
+            font-size: 14px;
+        }
+
+        & a{
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+
+             &:hover {
+                transform: translateY(-3px);
+            }   
+        }
     }
 
     & span:nth-child(1) {
-        font-size: 20px;
         color: var(--secondary-color)
     }
 
     & span:nth-child(2) {
         text-decoration: underline;
+        font-weight: lighter;
     }
+}
+
+main section {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 412px;
+    height: 542px;
+    background: #2ecc71;
+    border-radius: 40px;
+    box-shadow: rgba(0, 255, 110, 0.4) 5px 5px, rgba(0, 255, 81, 0.3) 10px 10px, rgba(72, 255, 0, 0.2) 15px 15px, rgba(9, 255, 0, 0.1) 20px 20px, rgba(0, 255, 60, 0.05) 25px 25px;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 255, 110, 0.4) 15px 15px, rgba(0, 255, 81, 0.3) 20px 20px, rgba(72, 255, 0, 0.2) 25px 25px, rgba(9, 255, 0, 0.1) 30px 30px, rgba(0, 255, 60, 0.05) 35px 35px;
 }
