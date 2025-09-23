@@ -99,6 +99,13 @@ main section div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+.card-footer .icons {
+    display: flex;         
+    flex-direction: row;
+    gap: 15px;               
 }
 
 hr {
