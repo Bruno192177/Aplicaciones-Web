@@ -37,7 +37,7 @@ body {
             font-weight: bold;
             transition: transform 0.3s ease-in-out;
 
-             &:hover {
+            &:hover {
                 transform: translateY(-3px);
             }   
         }
@@ -75,9 +75,52 @@ main section div {
     background: #2ecc71;
     border-radius: 40px;
     box-shadow: rgba(0, 255, 110, 0.4) 5px 5px, rgba(0, 255, 81, 0.3) 10px 10px, rgba(72, 255, 0, 0.2) 15px 15px, rgba(9, 255, 0, 0.1) 20px 20px, rgba(0, 255, 60, 0.05) 25px 25px;
-    transition: box-shadow 1s ease-in-out;
+    transition: box-shadow 1s ease-in-out,
+    transform 0.8s ease-in-out;
+    overflow: hidden;
 }
 
 .card:hover{
+    transform: translateY(-5px);
     box-shadow: rgba(0, 255, 110, 0.4) 15px 15px, rgba(0, 255, 81, 0.3) 20px 20px, rgba(72, 255, 0, 0.2) 25px 25px, rgba(9, 255, 0, 0.1) 30px 30px, rgba(0, 255, 60, 0.05) 35px 35px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+.card-footer{
+    height: 76px;
+    width: 100%;
+    background-color: white;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+hr {
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+
+.card-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.card-content img:hover {
+    filter: drop-shadow( 0 10px 20px rgba(0, 0, 0, 0.8));
+    transition: all 1s ease-in-out;
+}
+
+.card-footer img {
+    width: 30px;
+    height: 30px;
 }
