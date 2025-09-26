@@ -108,6 +108,11 @@ main section div {
     gap: 15px;               
 }
 
+.card-footer .icons img:hover {
+    filter: drop-shadow( 0 5px 10px rgba(0, 0, 0, 0.8));
+    transition: all 0.5s ease-in-out;
+}
+
 hr {
     width: 80px;
     height: 2px;
@@ -128,6 +133,76 @@ hr {
 }
 
 .card-footer img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
+
+article h2 {
+    font-size: 40px;
+    white-space: pre-line;
+}
+
+.info {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.info h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #0f0f3d; 
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.info h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 1px;
+    line-height: 1.7;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 17px;
+}
+
+.btn.primary {
+    background-color: #0f0f3d;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.btn.primary:hover {
+    background-color: #22225a;
+}
+
+.btn.secondary {
+    background: white;
+    border: 2px solid #0f0f3d;
+    color: #0f0f3d;
+}
+
+.btn.secondary:hover {
+    background: #f2f2f2;
+}
+
